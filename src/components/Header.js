@@ -1,8 +1,25 @@
 import React from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container, Dropdown } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+import Language from "../i18n/Language.ts";
 import "../styles/Header.css";
 
 function Header() {
+
+    const { t } = useTranslation();
+    const { i18n } = useTranslation();
+    const [lang, setLang] = React.useState(i18n.language);
+
+    function changeLanguage() {
+        if (lang === Language.FR) {
+            setLang(Language.EN);
+            i18n.changeLanguage(Language.EN);
+        } else {
+            setLang(Language.FR);
+            i18n.changeLanguage(Language.FR);
+        }
+    };
+
     return (
         <div className="Header">
             <header className="Header-light">
@@ -14,29 +31,39 @@ function Header() {
                                 alt="logo"
                                 className="Header-logo"
                             />
+
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link href="#home">
-                                    Home
+                                    {t("header.home")}
                                 </Nav.Link>
                                 <Nav.Link href="#me">
-                                    Qui sui-je ?
+                                    {t("header.me")}
                                 </Nav.Link>
                                 <Nav.Link href="#experiences">
-                                    Expériences
+                                    {t("header.experiences")}
                                 </Nav.Link>
                                 <Nav.Link href="#projects">
-                                    Projets
+                                    {t("header.projects")}
                                 </Nav.Link>
                                 <Nav.Link href="#competences">
-                                    Compétences
+                                    {t("header.competences")}
                                 </Nav.Link>
                                 <Nav.Link href="#hobbys">
-                                    Hobbys
+                                    {t("header.hobbys")}
                                 </Nav.Link>
                             </Nav>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="button" id="dropdown-basic">
+                                    {t("name")}
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item onClick={changeLanguage}>FR</Dropdown.Item>
+                                    <Dropdown.Item onClick={changeLanguage}>EN</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

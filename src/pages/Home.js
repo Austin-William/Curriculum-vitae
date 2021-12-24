@@ -1,11 +1,12 @@
 import React from 'react';
+import CV from './Cv';
 import "../styles/Home.css";
 
 function Home() {
     return (
         <div className="Home-light">
             <div className="Home-container">
-                <h1>Home</h1>
+                <CV />
             </div>
         </div>
     );

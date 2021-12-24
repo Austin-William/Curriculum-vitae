@@ -1,0 +1,13 @@
+{
+    "language": "EN",
+    "name": "English",
+    "header": {
+        "home": "Home",
+        "me": "Who am I ?",
+        "experiences": "Experiences",
+        "projects": "Projects",
+        "competences": "Competences",
+        "hobbys": "Hobbys",
+        "language": "Language"
+    }
+}

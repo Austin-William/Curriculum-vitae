@@ -1,0 +1,14 @@
+{
+    "language": "FR",
+    "name": "Français",
+    "header": {
+        "title": "FR",
+        "home": "Accueil",
+        "me": "Qui suis-je ?",
+        "experiences": "Expériences",
+        "projects": "Projets",
+        "competences": "Compétences",
+        "hobbys": "Hobbys",
+        "language": "Langage"
+    }
+}
