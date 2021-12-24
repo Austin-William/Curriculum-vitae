@@ -1,0 +1,38 @@
+.Header {
+    height: 200px;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    top: 0;
+}
+
+.Header-dark {
+  height: 200px;
+  background:-moz-radial-gradient(circle at 1% 50%, rgb(117, 110, 89) 0%, rgb(43, 43, 43) 50%);
+  background:-webkit-radial-gradient(circle at 1% 50%, rgb(117, 110, 89) 0%, rgba(43, 43, 43) 50%);
+  background:-o-radial-gradient(circle at 1% 50%, rgba(117, 110, 89) 0%, rgba(43, 43, 43) 50%);
+  background:-ms-radial-gradient(circle at 1% 50%, rgba(117, 110, 89) 0%, rgb(43, 43, 43) 50%);
+  background:radial-gradient(circle at 1% 50%, rgb(117, 110, 89) 0%, rgba(43, 43, 43) 50%);
+}
+
+.Header-light {
+  height: 200px;
+  background:-moz-radial-gradient(circle at 1% 50%, rgb(32, 112, 122) 0%, rgb(196, 196, 196) 50%);
+  background:-webkit-radial-gradient(circle at 1% 50%, rgba(32, 112, 122) 0%, rgba(196, 196, 196) 50%);
+  background:-o-radial-gradient(circle at 1% 50%, rgba(32, 112, 122) 0%, rgba(196, 196, 196) 50%);
+  background:-ms-radial-gradient(circle at 1% 50%, rgba(32, 112, 122) 0%, rgba(196, 196, 196) 50%);
+  background:radial-gradient(circle at 1% 50%, rgba(32, 112, 122) 0%, rgba(196, 196, 196) 50%);
+}
+
+.Header-container {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.Header-logo {
+    width: auto;
+    height: 50px;
+    border-radius: 50%;
+}
