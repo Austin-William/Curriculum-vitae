@@ -35,7 +35,12 @@
             "title": "Skills"
         },
         "hobbies": {
-            "title": "What I do during my free time"
+            "title": "What I do during my free time",
+            "hobby-1": "Sports",
+            "hobby-2": "Video games",
+            "hobby-3": "Videos/Photos editing",
+            "hobby-4": "Create this website",
+            "hobby-5": "Get out in the fresh air because it's important to get some fresh air to feel good"
         }
     },
     "footer": {
