@@ -12,8 +12,16 @@
         "experiences": "Expériences",
         "projects": "Projets",
         "competences": "Compétences",
-        "hobbys": "Hobbys",
+        "hobbys": "Activités",
         "language": "Langage"
+    },
+    "cv": {
+        "welcome": "Bienvenue",
+        "welcome-1": "dans mon CV en ligne",
+        "welcome-2": "pour voir qui je suis",
+        "welcome-3": "ce que j'ai fais",
+        "welcome-4": "ce que j'ai appris",
+        "welcome-5": "bonne lecture !"
     },
     "footer": {
         "title": "Vous voulez en savoir plus sur moi ?",

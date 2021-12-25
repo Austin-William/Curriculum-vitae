@@ -3,6 +3,9 @@
     width: 100%;
     height: 85%;
     margin-top: 9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Cv {
@@ -87,4 +90,29 @@
     40% { top: -100px; }
     60% { top: -150px; }
     80% { top: -200px; }
+}
+
+hr {
+    color: white;
+    width: 100%;
+}
+
+.Cv-me {
+    margin-top: 10em;
+}
+
+.Cv-experiences {
+    margin-top: 10em;
+}
+
+.Cv-projects {
+    margin-top: 10em;
+}
+
+.Cv-competences {
+    margin-top: 10em;
+}
+
+.Cv-hobbies {
+    margin-top: 10em;
 }

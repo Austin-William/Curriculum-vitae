@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Navbar, Container, Dropdown } from "react-bootstrap";
+import { Nav, Navbar, Container, Dropdown, DropdownButton } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Language from "../i18n/Language.ts";
 import "../styles/Header.css";
@@ -8,15 +8,22 @@ function Header() {
 
     const { t } = useTranslation();
     const { i18n } = useTranslation();
-    const [lang, setLang] = React.useState(Language.FR);
+    const [lang, setLang] = React.useState(i18n.language);
 
-    function changeLanguage() {
-        if (lang === Language.FR) {
-            setLang(Language.EN);
-            i18n.changeLanguage(Language.EN);
-        } else {
-            setLang(Language.FR);
-            i18n.changeLanguage(Language.FR);
+    function changeLanguage(event) {
+        switch (event) {
+            case "fr":
+                i18n.changeLanguage("fr");
+                setLang(Language.FR);
+                break;
+            case "en":
+                i18n.changeLanguage("en");
+                setLang(Language.EN);
+                break;
+            default:
+                i18n.changeLanguage("fr");
+                setLang(Language.FR);
+                break;
         }
     };
 
@@ -51,18 +58,23 @@ function Header() {
                                 <Nav.Link href="#competences">
                                     {t("header.competences")}
                                 </Nav.Link>
-                                <Nav.Link href="#hobbys">
+                                <Nav.Link href="#hobbies">
                                     {t("header.hobbys")}
                                 </Nav.Link>
                             </Nav>
                             <Dropdown>
-                                <Dropdown.Toggle className="text-white" variant="button" id="dropdown-lang">
-                                    {t("name")}
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="text-white">
-                                    <Dropdown.Item onClick={changeLanguage}>FR</Dropdown.Item>
-                                    <Dropdown.Item onClick={changeLanguage}>EN</Dropdown.Item>
-                                </Dropdown.Menu>
+                                <DropdownButton
+                                    id="dropdown-basic-button"
+                                    title={lang}
+                                    variant="secondary"
+                                >
+                                    <Dropdown.Item onClick={() => changeLanguage("fr")}>
+                                        {Language.FR}
+                                    </Dropdown.Item>
+                                    <Dropdown.Item onClick={() => changeLanguage("en")}>
+                                        {Language.EN}
+                                    </Dropdown.Item>
+                                </DropdownButton>
                             </Dropdown>
                         </Navbar.Collapse>
                     </Container>

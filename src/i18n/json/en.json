@@ -11,8 +11,16 @@
         "experiences": "Experiences",
         "projects": "Projects",
         "competences": "Competences",
-        "hobbys": "Hobbys",
+        "hobbys": "Hobbies",
         "language": "Language"
+    },
+    "cv": {
+        "welcome": "Welcome",
+        "welcome-1": "in my online CV",
+        "welcome-2": "to see who I am",
+        "welcome-3": "what I did",
+        "welcome-4": "what I learned",
+        "welcome-5": "good reading !"
     },
     "footer": {
         "title": "Do you want to know more about me ?",
