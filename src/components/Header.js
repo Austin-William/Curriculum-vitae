@@ -2,6 +2,7 @@ import React from "react";
 import { Nav, Navbar, Container, Dropdown, DropdownButton } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Language from "../i18n/Language.ts";
+import Welcome from "./Welcome";
 import "../styles/Header.css";
 
 function Header() {
@@ -80,6 +81,7 @@ function Header() {
                     </Container>
                 </Navbar>
             </header>
+            <Welcome />
         </div>
     );
 }

@@ -14,7 +14,15 @@ function Me() {
             <hr />
             <div className="Me-description">
                 <p>
-                    {t("cv.me.description")}
+                    {t("cv.me.description-1")}
+                </p>
+                <br />
+                <p>
+                    {t("cv.me.description-2")}
+                </p>
+                <br />
+                <p>
+                    {t("cv.me.description-3")}
                 </p>
             </div>
         </div>

@@ -20,7 +20,10 @@
             "welcome-5": "good reading !"
         },
         "me": {
-            "title": "Who am I ?"
+            "title": "Who am I ?",
+            "description-1": "Austin-William Lo, 3rd year student at Epitech to become an Information Technology Expert after a BAC +5.",
+            "description-2": "I learned various programming languages ​​such as C, C ++, Python, Flutter (Dart) or JavaScript through Haskell through small and large projects in order to be ready to work in a business. Whether for personal or professional projects, I learned to be autonomous, to work in a team and to adapt to any situation.",
+            "description-3": "I would like to work in a professional context during an internship and I am at your disposal for any questions."
         },
         "experiences": {
             "title": "Experiences"
