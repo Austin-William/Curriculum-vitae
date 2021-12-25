@@ -22,7 +22,7 @@
         },
         "me": {
             "title": "Qui suis-je ?",
-            "description": "test"
+            "description": "Austin-William Lo, étudiant en 3ème année à Epitech pour devenir Expert en Technologie de l'Information"
         },
         "experiences": {
             "title": "Expériences"
@@ -34,7 +34,12 @@
             "title": "Compétences"
         },
         "hobbies": {
-            "title": "Ce que je fais en loisir"
+            "title": "Ce que je fais en loisir",
+            "hobby-1": "Sport",
+            "hobby-2": "Je pratique le foot",
+            "hobby-3": "Je pratique le basket",
+            "hobby-4": "Je pratique le handball"
+
         }
     },
     "footer": {

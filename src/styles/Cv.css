@@ -1,124 +1,14 @@
 .Cv {
     background: #2d2d2d;
     width: 100%;
-    height: 85%;
-    margin-top: 9em;
-    display: flex;
-    flex-direction: column;
-}
-
-.Cv {
-    padding: 3em 5em;
+    height: 100%;
+    margin-top: 20em;
+    padding: 3em 2em;
     font: normal 40px/50px Montserrat, sans-serif;
     color: #999;
-}
-
-.Cv p {
-    height: 50px;
-    float: left;
-    margin-right: 0.3em;
-}
-  
-.Cv b {
-    float: left;
-    overflow: hidden;
-    position: relative;
-    height: 50px;
-}
-  
-.Cv .Cv-animated-text {
-    display: inline-block;
-    color: #e74c3c;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
-  
-  -webkit-animation:move 6s;
-     -moz-animation:move 6s;
-      -ms-animation:move 6s;
-       -o-animation:move 6s;
-          animation:move 6s;
-  -webkit-animation-iteration-count:infinite;
-     -moz-animation-iteration-count:infinite;
-      -ms-animation-iteration-count:infinite;
-       -o-animation-iteration-count:infinite;
-          animation-iteration-count:infinite;
-  -webkit-animation-delay:1s;
-     -moz-animation-delay:1s;
-      -ms-animation-delay:1s;
-       -o-animation-delay:1s;
-          animation-delay:1s;
-}
-
-@keyframes move{
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-  
-@-webkit-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-
-@-moz-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-
-@-o-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-
-@keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
 }
 
 hr {
     color: white;
     width: 100%;
-}
-
-.Cv-me {
-    margin-top: 10em;
-}
-
-.Cv-me .Cv-me-description {
-    height: auto;
-    width: 80%;
-    text-align: justify;
-    font-size: 20px;
-}
-
-.Cv-experiences {
-    margin-top: 10em;
-}
-
-.Cv-projects {
-    margin-top: 10em;
-}
-
-.Cv-skills {
-    margin-top: 10em;
-}
-
-.Cv-hobbies {
-    margin-top: 10em;
 }

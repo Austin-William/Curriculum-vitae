@@ -1,0 +1,87 @@
+
+.Welcome {
+    font: normal 30px Montserrat, sans-serif;
+    color: #999;
+}
+
+.Welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Welcome p {
+    height: 50px;
+    letter-spacing: 2px;
+}
+  
+.Welcome b {
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+}
+  
+.Welcome .Welcome-animated-text {
+    display: inline-block;
+    text-align: center;
+    color: #e74c3c;
+    position: relative;
+    white-space: nowrap;
+  
+  -webkit-animation:move 6s;
+     -moz-animation:move 6s;
+      -ms-animation:move 6s;
+       -o-animation:move 6s;
+          animation:move 6s;
+  -webkit-animation-iteration-count:infinite;
+     -moz-animation-iteration-count:infinite;
+      -ms-animation-iteration-count:infinite;
+       -o-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+  -webkit-animation-delay:3s;
+     -moz-animation-delay:3s;
+      -ms-animation-delay:3s;
+       -o-animation-delay:3s;
+          animation-delay:3s;
+}
+
+@keyframes move{
+    0%  { top: 0px; }
+    20% { top: -40px; }
+    40% { top: -75px; }
+    60% { top: -110px }
+    80% { top: -150px; }
+}
+  
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -40px; }
+    40% { top: -75px; }
+    60% { top: -110px }
+    80% { top: -150px; }
+}
+
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -40px; }
+    40% { top: -75px; }
+    60% { top: -110px }
+    80% { top: -150px; }
+}
+
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -40px; }
+    40% { top: -75px; }
+    60% { top: -110px }
+    80% { top: -150px; }
+}
+
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -40px; }
+    40% { top: -75px; }
+    60% { top: -110px }
+    80% { top: -150px; }
+}
