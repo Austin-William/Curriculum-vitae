@@ -12,6 +12,23 @@ function Hobbies() {
                 {t("cv.hobbies.title")}
             </h2>
             <hr />
+            <div className="Hobbies-description">
+                <p>
+                    {t("cv.hobbies.hobby-1")}
+                </p>
+                <p>
+                    {t("cv.hobbies.hobby-2")}
+                </p>
+                <p>
+                    {t("cv.hobbies.hobby-3")}
+                </p>
+                <p>
+                    {t("cv.hobbies.hobby-4")}
+                </p>
+                <p>
+                    {t("cv.hobbies.hobby-5")}
+                </p>
+            </div>
         </div>
     );
 }

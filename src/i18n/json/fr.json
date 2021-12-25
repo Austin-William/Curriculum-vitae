@@ -37,10 +37,11 @@
         },
         "hobbies": {
             "title": "Ce que je fais en loisir",
-            "hobby-1": "Sport",
-            "hobby-2": "Je pratique le foot",
-            "hobby-3": "Je pratique le basket",
-            "hobby-4": "Je pratique le handball"
+            "hobby-1": "Sports",
+            "hobby-2": "Jeux vidéo",
+            "hobby-3": "Montages vidéos/photos",
+            "hobby-4": "Créer ce site",
+            "hobby-5": "Sortir prendre l'air parce que c'est important de s'oxygéner pour se sentir bien"
 
         }
     },
