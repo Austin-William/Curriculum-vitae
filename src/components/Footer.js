@@ -1,19 +1,24 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "../styles/Footer.css";
 
 function Footer() {
+    const { t } = useTranslation();
+
     return (
         <footer className="Footer">
+            <div className="Footer-container-title">
+                    <h1>
+                        {t("footer.title")}
+                    </h1>
+                </div>
             <div className="Footer-container">
                 <div className="Footer-container-left">
-                    <img
-                        className="Footer-logo"
-                        src="https://unsplash.it/200/200?image=10"
-                        alt="logo"
-                    />
+                    <div className="Footer-container-left-logo">
+                    
+                    </div>
                     <p className="Footer-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, quidem.
+                        {t("footer.description")}
                     </p>
                 </div>
                 <div className="Footer-container-right">

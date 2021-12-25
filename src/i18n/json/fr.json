@@ -14,5 +14,9 @@
         "competences": "Compétences",
         "hobbys": "Hobbys",
         "language": "Langage"
+    },
+    "footer": {
+        "title": "Vous voulez en savoir plus sur moi ?",
+        "description": "Contactez moi pour plus d'informations avec LinkedIn, Github, ou par mail."
     }
 }
