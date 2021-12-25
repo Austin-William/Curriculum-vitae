@@ -1,6 +1,10 @@
 {
     "language": "EN",
     "name": "English",
+    "theme": {
+        "dark": "Dark",
+        "light": "Light"
+    },
     "header": {
         "home": "Home",
         "me": "Who am I ?",

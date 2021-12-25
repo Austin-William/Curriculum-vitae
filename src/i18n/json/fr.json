@@ -1,6 +1,10 @@
 {
     "language": "FR",
     "name": "Français",
+    "theme": {
+        "dark": "Sombre",
+        "light": "Clair"
+    },
     "header": {
         "title": "FR",
         "home": "Accueil",

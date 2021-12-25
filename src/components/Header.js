@@ -8,7 +8,7 @@ function Header() {
 
     const { t } = useTranslation();
     const { i18n } = useTranslation();
-    const [lang, setLang] = React.useState(i18n.language);
+    const [lang, setLang] = React.useState(Language.FR);
 
     function changeLanguage() {
         if (lang === Language.FR) {
@@ -22,8 +22,8 @@ function Header() {
 
     return (
         <div className="Header">
-            <header className="Header-light">
-                <Navbar collapseOnSelect expand="lg" variant="light">
+            <header className="Header-header">
+                <Navbar collapseOnSelect expand="lg" variant="dark">
                     <Container>
                         <Navbar.Brand href="/">
                             <img
@@ -56,10 +56,10 @@ function Header() {
                                 </Nav.Link>
                             </Nav>
                             <Dropdown>
-                                <Dropdown.Toggle variant="button" id="dropdown-basic">
+                                <Dropdown.Toggle className="text-white" variant="button" id="dropdown-lang">
                                     {t("name")}
                                 </Dropdown.Toggle>
-                                <Dropdown.Menu>
+                                <Dropdown.Menu className="text-white">
                                     <Dropdown.Item onClick={changeLanguage}>FR</Dropdown.Item>
                                     <Dropdown.Item onClick={changeLanguage}>EN</Dropdown.Item>
                                 </Dropdown.Menu>
