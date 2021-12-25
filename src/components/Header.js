@@ -55,8 +55,8 @@ function Header() {
                                 <Nav.Link href="#projects">
                                     {t("header.projects")}
                                 </Nav.Link>
-                                <Nav.Link href="#competences">
-                                    {t("header.competences")}
+                                <Nav.Link href="#skills">
+                                    {t("header.skills")}
                                 </Nav.Link>
                                 <Nav.Link href="#hobbies">
                                     {t("header.hobbys")}

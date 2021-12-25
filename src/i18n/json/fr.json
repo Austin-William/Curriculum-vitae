@@ -1,27 +1,41 @@
 {
     "language": "FR",
     "name": "Français",
-    "theme": {
-        "dark": "Sombre",
-        "light": "Clair"
-    },
     "header": {
         "title": "FR",
         "home": "Accueil",
         "me": "Qui suis-je ?",
         "experiences": "Expériences",
         "projects": "Projets",
-        "competences": "Compétences",
+        "skills": "Compétences",
         "hobbys": "Activités",
         "language": "Langage"
     },
     "cv": {
-        "welcome": "Bienvenue",
-        "welcome-1": "dans mon CV en ligne",
-        "welcome-2": "pour voir qui je suis",
-        "welcome-3": "ce que j'ai fais",
-        "welcome-4": "ce que j'ai appris",
-        "welcome-5": "bonne lecture !"
+        "welcome": {
+            "title": "Bienvenue",
+            "welcome-1": "dans mon CV en ligne",
+            "welcome-2": "pour voir qui je suis",
+            "welcome-3": "ce que j'ai fais",
+            "welcome-4": "ce que j'ai appris",
+            "welcome-5": "bonne lecture !"
+        },
+        "me": {
+            "title": "Qui suis-je ?",
+            "description": "test"
+        },
+        "experiences": {
+            "title": "Expériences"
+        },
+        "projects": {
+            "title": "Projets"
+        },
+        "skills": {
+            "title": "Compétences"
+        },
+        "hobbies": {
+            "title": "Ce que je fais en loisir"
+        }
     },
     "footer": {
         "title": "Vous voulez en savoir plus sur moi ?",

@@ -1,26 +1,39 @@
 {
     "language": "EN",
     "name": "English",
-    "theme": {
-        "dark": "Dark",
-        "light": "Light"
-    },
     "header": {
         "home": "Home",
         "me": "Who am I ?",
         "experiences": "Experiences",
         "projects": "Projects",
-        "competences": "Competences",
+        "skills": "Skills",
         "hobbys": "Hobbies",
         "language": "Language"
     },
     "cv": {
-        "welcome": "Welcome",
-        "welcome-1": "in my online CV",
-        "welcome-2": "to see who I am",
-        "welcome-3": "what I did",
-        "welcome-4": "what I learned",
-        "welcome-5": "good reading !"
+        "welcome": {
+            "title": "Welcome",
+            "welcome-1": "in my online CV",
+            "welcome-2": "to see who I am",
+            "welcome-3": "what I did",
+            "welcome-4": "what I learned",
+            "welcome-5": "good reading !"
+        },
+        "me": {
+            "title": "Who am I ?"
+        },
+        "experiences": {
+            "title": "Experiences"
+        },
+        "projects": {
+            "title": "Projects"
+        },
+        "skills": {
+            "title": "Skills"
+        },
+        "hobbies": {
+            "title": "What I do during my free time"
+        }
     },
     "footer": {
         "title": "Do you want to know more about me ?",
