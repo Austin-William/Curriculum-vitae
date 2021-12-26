@@ -1,5 +1,51 @@
 .Me {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.Me .Me-container {
+    padding: 5em;
+}
+
+.Me .Me-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Me .Me-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.Me-img {
+    width: auto;
+    height: 20vh;
+    object-fit: cover;
+}
+
+@media (max-width : 768px) {
+    .Me .Me-container {
+        padding: 1em;
+    }
+
+    .Me-img {
+        width: auto;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .Me .Me-description {
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .Me .Me-description {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, useAccordionButton, Accordion } from "react-bootstrap";
+import { Toast, Button, Col, Row, Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import "../styles/Experiences.css";
 
@@ -7,86 +7,57 @@ function Experiences() {
 
     const { t } = useTranslation();
 
-    function CustomButton({ children, eventKey }) {
-        const decoratedOnClick = useAccordionButton(eventKey);
+    const [show1, setShow1] = React.useState(false);
+    const [show2, setShow2] = React.useState(false);
 
-        return (
-            <button
-                type="button"
-                style={{
-                    backgroundColor: "transparent",
-                    border: "none",
-                    color: "white",
-                    cursor: "pointer",
-                    outline: "none",
-                    padding: "0",
-                    margin: "0",
-                }}
-                onClick={decoratedOnClick}
-            >
-                {children}
-            </button>
-        );
-    }
+    const toggleShow1 = () => setShow1(!show1);
+    const toggleShow2 = () => setShow2(!show2);
 
     return (
         <div className="Experiences" id="experiences">
-            <h2>
-                {t("cv.experiences.title")}
-            </h2>
-            <hr />
-            <div className="Experiences-description">
-                <Accordion defaultActiveKey="0">
-                    <Card className="Experiences-card">
-                        <Card.Header className="Experiences-card-header">
-                            <CustomButton eventKey="0">
-                                <Card.Img className="Experiences-card-img-preview" variant="top" src="assets/epitech_logo.png" alt="epitech_logo.png" />
-                            </CustomButton>
-                        </Card.Header>
-                        <Accordion.Collapse eventKey="0">
-                            <Card.Body>
-                                <Card.Title className="Experiences-card-title">
-                                    {t("cv.experiences.jobs.job-1.company")}
-                                </Card.Title>
-                                <Card.Subtitle className="Experiences-card-subtitle">
-                                    {t("cv.experiences.jobs.job-1.type")}
-                                </Card.Subtitle>
-                                <Card.Text className="Experiences-card-text">
-                                    {t("cv.experiences.jobs.job-1.description")}
-                                </Card.Text>
-                                <Card.Footer className="Experiences-card-footer">
-                                    {t("cv.experiences.jobs.job-1.date")}
-                                </Card.Footer>
-                            </Card.Body>
-                        </Accordion.Collapse>
-                    </Card>
-                    <Card className="Experiences-card">
-                        <Card.Header className="Experiences-card-header">
-                            <CustomButton eventKey="1">
-                                <Card.Img className="Experiences-card-img-preview" variant="top" src="assets/linagora_logo.png" alt="linagora_logo.png" />
-                            </CustomButton>
-                        </Card.Header>
-                        <Accordion.Collapse eventKey="1">
-                            <Card.Body>
-                                <Card.Title className="Experiences-card-title">
-                                    {t("cv.experiences.jobs.job-2.company")}
-                                </Card.Title>
-                                <Card.Subtitle className="Experiences-card-subtitle">
-                                    {t("cv.experiences.jobs.job-2.type")}
-                                </Card.Subtitle>
-                                <Card.Text className="Experiences-card-text">
-                                    {t("cv.experiences.jobs.job-2.description")}
-                                    <br />
-                                    <br />
-                                    {t("cv.experiences.jobs.job-2.description-2")}
-                                </Card.Text>
-                                <Card.Footer className="Experiences-card-footer">
-                                    {t("cv.experiences.jobs.job-2.date")}
-                                </Card.Footer>
-                            </Card.Body>
-                        </Accordion.Collapse>
-                    </Card>
-                </Accordion>
+            <div className="Experiences-container">
+                <h2>
+                    {t("cv.experiences.title")}
+                </h2>
+                <hr />
+                <div className="Experiences-description">
+                    <Container>
+                        <Row className="text-center">
+                            <Col className="Experiences-col">
+                                <Button variant="button" onClick={toggleShow1} className="Experiences-button">
+                                    <img className="Experiences-img-preview" src="assets/epitech_logo.png" alt="epitech_logo" />
+                                </Button>
+                                <Toast show={show1} onClose={toggleShow1} className="Experiences-toast">
+                                    <Toast.Header>
+                                        <strong className="me-auto">{t("cv.experiences.jobs.job-1.company")}</strong>
+                                        <small>{t("cv.experiences.jobs.job-1.type")}</small>
+                                    </Toast.Header>
+                                    <Toast.Body>
+                                        <p className="Experiences-toast-description">{t("cv.experiences.jobs.job-1.description")}</p>
+                                    </Toast.Body>
+                                    <small>{t("cv.experiences.jobs.job-1.date")}</small>
+                                </Toast>
+                            </Col>
+                            <Col className="">
+                                <Button variant="button" onClick={toggleShow2} className="Experiences-button">
+                                    <img className="Experiences-img-preview" src="assets/linagora_logo.png" alt="linagora_logo" />
+                                </Button>
+                                <Toast show={show2} onClose={toggleShow2} className="Experiences-toast">
+                                    <Toast.Header>
+                                        <strong className="me-auto">{t("cv.experiences.jobs.job-2.company")}</strong>
+                                        <small>{t("cv.experiences.jobs.job-2.type")}</small>
+                                    </Toast.Header>
+                                    <Toast.Body>
+                                        <p className="Experiences-toast-description">{t("cv.experiences.jobs.job-2.description")}</p>
+                                        <br />
+                                        <p className="Experiences-toast-description">{t("cv.experiences.jobs.job-2.description-2")}</p>
+                                    </Toast.Body>
+                                    <small>{t("cv.experiences.jobs.job-2.date")}</small>
+                                </Toast>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
             </div>
         </div>
     );

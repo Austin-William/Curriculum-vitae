@@ -1,56 +1,92 @@
 .Experiences {
-    margin-top: 5em;
+    background-color: #707070;
+}
+
+.Experiences-container {
+    padding: 5em;
 }
 
 .Experiences-description {
-    margin-top: 1em;
+    margin-top: 2em;
+}
+
+.Experiences-button {
+    height: 11em;
+    width: 11em;
     margin-bottom: 2em;
+    z-index: 1;
+    position: relative;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(0, 0%, 69%);
+}
+.Experiences-button:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid hsl(0, 0%, 69%);
+    transform-origin: center;
+    transform: scale(1);
 }
 
-.Experiences-card-title {
-    font-size: 30px;
-    font-weight: bold;
+.Experiences-button:hover {
+    cursor: pointer;
 }
 
-.Experiences-card-subtitle {
-    margin-top: 1em;
-    margin-bottom: 2em;
-    font-size: 20px;
+.Experiences-button:hover::before {
+    transition: all 0.5s ease-in-out;
+    transform-origin: center;
+    transform: scale(1.25);
+    opacity: 0;
 }
 
-.Experiences-card-text {
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-    font-size: 18px;
-}
-
-.Experiences-card-footer {
-    font-size: 14px;
-    text-align: center;
-    justify-content: center;
-    background-color: transparent;
-}
-
-.Experiences-card {
+.Experiences-img-preview {
     height: 100%;
     width: 100%;
-    margin-bottom: 1em;
+    object-fit: scale-down;
+    transition: all 0.4s ease;
 }
 
-.Experiences-card-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Experiences-img-preview:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
-.Experiences-card-img-preview {
-    width: 30%;
-    height: 30%;
-    object-fit: cover;
+.Experiences-toast {
+    width: 150%;
+    height: 90%;
+}
+
+.Experiences-toast-description {
+    font-size: 1.1em;
+    margin-top: 1em;
+    text-align: justify;
+    padding: 0.4em;
+}
+
+.Experiences-col {
+    margin-bottom: 3.5em;
 }
 
 hr {
     margin-top: 1em;
     margin-bottom: 1em;
     background-color: aqua;
+}
+
+@media (max-width: 768px) {
+
+    .Experiences-container {
+        padding: 1em;
+    }
+
+    .Experiences-button {
+        transform: scale(0.7);
+    }
 }
