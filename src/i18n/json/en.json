@@ -26,7 +26,22 @@
             "description-3": "I would like to work in a professional context during an internship and I am at your disposal for any questions."
         },
         "experiences": {
-            "title": "Experiences"
+            "title": "Experiences",
+            "jobs": {
+                "job-1": {
+                    "type": "Student",
+                    "company": "Epitech",
+                    "date": "October 2020 - Today",
+                    "description": "Currently a 3rd year student at Epitech to become an Information Technology Expert."
+                },
+                "job-2": {
+                    "type": "Internship",
+                    "company": "Linagora",
+                    "date": "September 2020 - December 2020",
+                    "description": "Internship to start my 2nd year at Epitech and have a first professional experience. The internship consisted in developing an online CV generator specific to their specifications for prestataires.",
+                    "description-2": "The generator was developed in ReactJS and used a basic API to fetch data from Linagora API. Writing documentation for the application and users were part of my missions. As a bonus, I was able to explore the backend side of the app with Nginx to connect the app to their database."
+                }
+            }
         },
         "projects": {
             "title": "Projects"

@@ -27,7 +27,22 @@
             "description-3": "J'aimerai travailler dans un contexte professionnel lors d'un stage et je suis à votre disposition pour toutes questions."
         },
         "experiences": {
-            "title": "Expériences"
+            "title": "Expériences",
+            "jobs": {
+                "job-1": {
+                    "type": "Etudiant",
+                    "company": "Epitech",
+                    "date": "Octobre 2020 - Aujourd'hui",
+                    "description": "Actuellement étudiant en 3ème année à Epitech pour devenir Expert en Technologie de l'Information."
+                },
+                "job-2": {
+                    "type": "Stage",
+                    "company": "Linagora",
+                    "date": "Septembre 2020 - Décembre 2020",
+                    "description": "Stage pour débuter ma 2ème année à Epitech et avoir une première expérience professionnelle. Le stage consistait à développer un générateur de CV en ligne propre à leur cahier des charges pour des préstataires.",
+                    "description-2": " Le générateur était développé en ReactJS et utilisait une API de base pour récupérer les données de l'API de Linagora. La rédaction d'une documentation de l'application et utilisateurs faisaient partie de mes missions. En bonus, j'avais pu explorer le côté backend de l'application avec Nginx pour connecter l'application à leur base de données."
+                }
+            }
         },
         "projects": {
             "title": "Projets"
