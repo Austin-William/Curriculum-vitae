@@ -33,7 +33,7 @@ function Header() {
             <header className="Header-header">
                 <Navbar collapseOnSelect expand="lg" variant="dark">
                     <Container>
-                        <Navbar.Brand href="/">
+                        <Navbar.Brand href="#">
                             <img
                                 src="https://avatars.githubusercontent.com/u/55129304?v=4"
                                 alt="logo"
@@ -81,7 +81,9 @@ function Header() {
                     </Container>
                 </Navbar>
             </header>
-            <Welcome />
+            <div className="Header-container">
+                <Welcome />
+            </div>
         </div>
     );
 }
