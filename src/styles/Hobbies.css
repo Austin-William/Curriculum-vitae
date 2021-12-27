@@ -1,5 +1,12 @@
 .Hobbies {
     margin-top: 5em;
+    background-color: crimson;
+    color: crimson;
+}
+
+.Hobbies .Hobbies-container {
+    padding: 5em;
+    background-color: rgb(29, 29, 29);
 }
 
 .Hobbies .Hobbies-description {
@@ -8,4 +15,25 @@
     text-align: justify;
     word-spacing: 2px;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.Hobbies-description p {
+    display: flex;
+    padding: 1em;
+    transition: all 0.5s;
+    border-radius: 5em;
+}
+
+.Hobbies-description p:hover {
+    color: black;
+    background-color: crimson;
+    border-radius: 5em;
+}
+
+.Hobbies-description i {
+    font-size: 50px;
+    margin-right: 1em;
 }
