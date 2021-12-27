@@ -1,3 +1,8 @@
 .Skills {
     margin-top: 5em;
 }
+
+.Skills-container {
+    padding: 5em;
+    background-color: white;
+}

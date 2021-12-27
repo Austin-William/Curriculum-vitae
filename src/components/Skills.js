@@ -8,10 +8,12 @@ function Skills() {
 
     return (
         <div className="Skills" id="skills">
-            <h2>
-                {t("cv.skills.title")}
-            </h2>
-            <hr />
+            <div className="Skills-container">
+                <h2>
+                    {t("cv.skills.title")}
+                </h2>
+                <hr />
+            </div>
         </div>
     );
 }
