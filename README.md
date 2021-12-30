@@ -2,7 +2,7 @@
 
 ## Website
 
-The app is accessible at [link](https://austin-cv.herokuapp.com)
+The app is accessible at [link](https://austin-cv.herokuapp.com).\n
 The loading will take a while because it's hosted on Heroku.
 
 This is an online version of my CV to have a better experience compared to a CV in pdf.
