@@ -1,0 +1,17 @@
+.App {
+    background: linear-gradient(-30deg, yellow, orange, crimson, black, #23d5ab);
+    background-size: 500% 130%;
+    animation: Gradient 3s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

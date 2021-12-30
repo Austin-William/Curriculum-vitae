@@ -1,9 +1,5 @@
 .Footer {
-    background:-moz-radial-gradient(circle at 1% 50%, rgb(32, 112, 122) 0%, rgb(196, 196, 196) 50%);
-    background:-webkit-radial-gradient(circle at 1% 50%, rgba(32, 112, 122) 0%, rgba(196, 196, 196) 50%);
-    background:-o-radial-gradient(circle at 1% 50%, rgba(32, 112, 122) 0%, rgba(196, 196, 196) 50%);
-    background:-ms-radial-gradient(circle at 1% 50%, rgba(32, 112, 122) 0%, rgba(196, 196, 196) 50%);
-    background:radial-gradient(circle at 1% 50%, rgba(32, 112, 122) 0%, rgba(196, 196, 196) 50%);
+    background: transparent;
     padding: 3em;
     display: block;
     text-align: center;
