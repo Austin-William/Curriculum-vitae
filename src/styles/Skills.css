@@ -1,14 +1,109 @@
 .Skills {
-    margin-top: 5em;
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    color: white;
 }
 
 .Skills-container {
     padding: 5em;
+}
+
+.Skills-container hr {
+    background-color: black;
+}
+
+.Skills-description {
+    font-size: 1.5em;
+    animation-name: Skills-animation-bar;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.Skills-stat-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Skills-bar {
+    background-color: black;
+    padding-top: 0.15em;
+    margin-top: -0.05em;
+    margin-bottom: 0.9em;
+    border-radius: 5px;
+}
+
+.Skills-stat-bar {
     background-color: white;
+    padding-top: 0.05em;
+    margin-top: -0.05em;
+    border-radius: 5px;
+}
+
+.Skills-stat {
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.Skills-col {
+    margin-top: 1em;
+}
+
+.Skills-stat-bar .js {
+    width: 70%;
+}
+
+.Skills-stat-bar .html {
+    width: 70%;
+}
+
+.Skills-stat-bar .css {
+    width: 80%;
+}
+
+.Skills-stat-bar .cp {
+    width: 60%;
+}
+
+.Skills-stat-bar .c {
+    width: 60%;
+}
+
+.Skills-stat-bar .dart {
+    width: 70%;
+}
+
+.Skills-stat-bar .assembly {
+    width: 30%;
+}
+
+.Skills-stat-bar .haskell {
+    width: 20%;
+}
+
+.Skills-stat-bar .python {
+    width: 40%;
+}
+
+.Skills-stat-bar .docker {
+    width: 50%;
 }
 
 @media (max-width: 768px) {
     .Skills-container {
         padding: 1em;
+    }
+}
+
+@keyframes Skills-animation-bar{
+    0% {
+        width: 0%;
+    }
+    80% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
     }
 }

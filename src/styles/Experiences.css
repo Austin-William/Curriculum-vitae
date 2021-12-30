@@ -1,5 +1,8 @@
 .Experiences {
-    background-color: #707070;
+    background-color: #424242;
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
 }
 
 .Experiences-container {
@@ -8,15 +11,15 @@
 
 .Experiences-description {
     margin-top: 2em;
+    color: black;
 }
 
 .Experiences-button {
     height: 11em;
     width: 11em;
     margin-bottom: 2em;
-    color: white;
     padding: 0.5em 1em;
-    background-color: crimson;
+    background-color: white;
 }
 
 .Experiences-button:hover {
@@ -68,7 +71,7 @@
     margin-bottom: 3.5em;
 }
 
-hr {
+.Experiences hr {
     margin-top: 1em;
     margin-bottom: 1em;
     background-color: aqua;
@@ -80,7 +83,16 @@ hr {
         padding: 1em;
     }
 
+    .Experiences-toast-description {
+        font-size: 0.9em;
+    }
+
     .Experiences-button {
-        transform: scale(0.7);
+        height: 8em;
+        width: 8em;
+    }
+
+    .Experiences-toast {
+        margin-bottom: 2em;
     }
 }
