@@ -6,7 +6,6 @@
         "home": "Accueil",
         "me": "Qui suis-je ?",
         "experiences": "Expériences",
-        "projects": "Projets",
         "skills": "Compétences",
         "hobbys": "Activités",
         "language": "Langage"
@@ -43,9 +42,6 @@
                     "description-2": " Le générateur était développé en ReactJS et utilisait une API de base pour récupérer les données de l'API de Linagora. La rédaction d'une documentation de l'application et utilisateurs faisaient partie de mes missions. En bonus, j'avais pu explorer le côté backend de l'application avec Nginx pour connecter l'application à leur base de données."
                 }
             }
-        },
-        "projects": {
-            "title": "Projets"
         },
         "skills": {
             "title": "Compétences"

@@ -44,7 +44,7 @@ function Header() {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link href="#home">
+                                <Nav.Link href="#home" className="nav-tabs active">
                                     {t("header.home")}
                                 </Nav.Link>
                                 <Nav.Link href="#me">
@@ -52,9 +52,6 @@ function Header() {
                                 </Nav.Link>
                                 <Nav.Link href="#experiences">
                                     {t("header.experiences")}
-                                </Nav.Link>
-                                <Nav.Link href="#projects">
-                                    {t("header.projects")}
                                 </Nav.Link>
                                 <Nav.Link href="#skills">
                                     {t("header.skills")}

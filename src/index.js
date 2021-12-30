@@ -10,7 +10,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App />} />
+            <Route exact path="/" element={<App />} />
             <Route
               path="*"
               element={<Error />}

@@ -5,7 +5,6 @@
         "home": "Home",
         "me": "Who am I ?",
         "experiences": "Experiences",
-        "projects": "Projects",
         "skills": "Skills",
         "hobbys": "Hobbies",
         "language": "Language"
@@ -22,7 +21,7 @@
         "me": {
             "title": "Who am I ?",
             "description-1": "Austin-William Lo, 3rd year student at Epitech to become an Information Technology Expert after a BAC +5.",
-            "description-2": "I learned various programming languages ​​such as C, C ++, Python, Flutter (Dart) or JavaScript through Haskell through small and large projects in order to be ready to work in a business. Whether for personal or professional projects, I learned to be autonomous, to work in a team and to adapt to any situation.",
+            "description-2": "I learned various programming languages ​​such as C, C ++, Python, Flutter (Dart) or JavaScript through Haskell through small and large service in order to be ready to work in a business. Whether for personal or professional service, I learned to be autonomous, to work in a team and to adapt to any situation.",
             "description-3": "I would like to work in a professional context during an internship and I am at your disposal for any questions."
         },
         "experiences": {
@@ -42,9 +41,6 @@
                     "description-2": "The generator was developed in ReactJS and used a basic API to fetch data from Linagora API. Writing documentation for the application and users were part of my missions. As a bonus, I was able to explore the backend side of the app with Nginx to connect the app to their database."
                 }
             }
-        },
-        "projects": {
-            "title": "Projects"
         },
         "skills": {
             "title": "Skills"
