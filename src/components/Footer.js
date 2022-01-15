@@ -32,7 +32,7 @@ function Footer() {
             </div>
             <div className="Footer-container-copyright">
                 <p>&copy; Austin William Lo</p>
-                <i>25/15/2020</i>
+                <i>28/12/2021</i>
             </div>
         </footer>
     );
