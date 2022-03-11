@@ -1,30 +1,27 @@
-# My Curriculum Vitae
+# CvAustin
 
-## Website
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 
-The app is accessible at [link](https://austin-cv.herokuapp.com).
-The loading will take a while because it's hosted on Heroku.
+## Development server
 
-This is an online version of my CV to have a better experience compared to a CV in pdf.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Packages used to develop this app
+## Code scaffolding
 
-```bash
-Node: 16.13.1
-npm: 8.3.0
-Docker version 20.10.11
-```
-## Installation
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Use the package manager [npm](https://www.npmjs.com/) to start the app and execute the following commands :
+## Build
 
-```bash
-npm install
-npm start
-```
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Or use Docker with :
+## Running unit tests
 
-```bash
-docker build -t <image_name> .
-```
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
