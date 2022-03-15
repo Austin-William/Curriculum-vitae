@@ -6,6 +6,7 @@ nav{
     bottom: 10px;
     opacity: 0.5;
     transition: all 0.5s;
+    z-index: 9999;
 }
 
 nav:hover {
