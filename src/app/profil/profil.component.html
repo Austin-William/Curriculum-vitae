@@ -1,5 +1,32 @@
 <section id="profile">
     <div ngClass="Profile-container">
+        <div ngClass="Profile-description">
+            <div ngClass="Profile-description-block-1" data-aos="fade-up" data-aos-duration="4000">
+                <h3>
+                    {{description_1}}
+                </h3>
+            </div>
+            <div ngClass="Profile-description-title" data-aos="fade-right" data-aos-duration="4000">
+                <h2>
+                    {{about}} <span>{{me}}</span>
+                </h2>
+            </div>
+            <div ngClass="Profile-description-block-2" data-aos="fade-up" data-aos-duration="4000">
+                <h3>
+                    {{description_2}}
+                </h3>
+            </div>
+            <!-- See CSS to remove this div -->
+            <div ngClass="Profile-description-block-3" data-aos="fade-up" data-aos-duration="4000">
+                <h3>
+                    {{description_3}}
+                </h3>
+                <h3>
+                    <span>{{ready_text}}</span>
+                </h3>
+            </div>
+            <!--  -->
+        </div>
         <div ngClass="Profile-list">
             <div ngClass="Profile-tiles" *ngFor="let profil of profiles">
                 <div ngClass="Profile-item" data-aos="fade-up" data-aos-duration="4000">
@@ -10,18 +37,6 @@
                         {{profil.description}}
                     </span>
                 </div>
-            </div>
-        </div>
-        <div ngClass="Profile-description">
-            <div ngClass="Profile-description-block-1" data-aos="fade-up" data-aos-duration="4000">
-                <h3>
-                    {{description_1}}
-                </h3>
-            </div>
-            <div ngClass="Profile-description-block-2" data-aos="fade-up" data-aos-duration="4000">
-                <h3>
-                    {{description_2}}
-                </h3>
             </div>
         </div>
     </div>
