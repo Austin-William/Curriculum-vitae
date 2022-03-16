@@ -20,22 +20,27 @@ export class ProjectsComponent implements OnInit {
         {
           url: 'assets/projects/redditech/1.png',
           alt: 'Redditech',
+          title: 'Home page'
         },
         {
           url: 'assets/projects/redditech/2.png',
           alt: 'Redditech',
+          title: 'Search page'
         },
         {
           url: 'assets/projects/redditech/3.png',
           alt: 'Redditech',
+          title: 'Settings page'
         },
         {
           url: 'assets/projects/redditech/4.png',
           alt: 'Redditech',
+          title: 'Profile page'
         },
         {
           url: 'assets/projects/redditech/5.png',
           alt: 'Redditech',
+          title: 'Preferences page'
         },
       ],
       link: 'https://github.com/Austin-William/Redditech',

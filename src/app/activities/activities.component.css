@@ -48,7 +48,7 @@ section {
     display: block;
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    margin-top: 5vh;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -60,7 +60,7 @@ section {
 }
 
 .Activities-item {
-    margin: 0.5rem;
+    margin: 2.5rem;
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.527);
