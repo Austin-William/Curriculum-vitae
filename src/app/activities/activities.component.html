@@ -1,12 +1,15 @@
 <section id="activities">
     <div ngClass="Activities-container">
-        <h1 data-aos="fade-up" data-aos-duration="4000">
-            <span>Activ</span>
-            <span ngClass="Activities-title-down-part">ities</span>
-        </h1>
+        <div ngClass="Activities-title">
+            <h1 data-aos="fade-up" data-aos-duration="4000">
+                <span>Activ</span>
+                <span ngClass="Activities-title-down-part">ities</span>
+            </h1>
+        </div>
         <div ngClass="Activities-list">
             <div ngClass="Activities-tiles" *ngFor="let activitie of activities">
-                <div ngClass="Activities-item" [ngStyle]="{'background-image': 'url(' + activitie.image + ')', 'background-position': 'center', 'background-color': 'black'}">
+                <div ngClass="Activities-item"
+                    [ngStyle]="{'background-image': 'url(' + activitie.image + ')', 'background-position': 'center', 'background-color': 'black'}">
                     <h3>
                         {{activitie.name}}
                     </h3>
