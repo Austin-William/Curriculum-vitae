@@ -12,4 +12,27 @@ export class ActivitiesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  activities = [
+    {
+      name: 'Sports',
+      image: 'assets/images/badminton.jpg',
+    },
+    {
+      name: 'Video Games',
+      image: 'assets/images/gaming.jpg',
+    },
+    {
+      name: 'Video Montages',
+      image: 'assets/images/video_montage.jpg',
+    },
+    {
+      name: 'Coding',
+      image: 'assets/images/coding.png',
+    },
+    {
+      name: 'Chilling',
+      image: 'assets/images/carafonc.png',
+    }
+  ];
+
 }

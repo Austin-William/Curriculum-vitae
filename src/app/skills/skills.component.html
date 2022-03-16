@@ -1,7 +1,28 @@
 <section id="skills">
     <div ngClass="Skills-container">
+        <div ngClass="Skills-bars-1">
+            <div *ngFor="let skill of skills_1" ngClass="Skills-bar" data-aos="fade-up" data-aos-duration="8000">
+                <label>
+                    {{skill.name}}
+                </label>
+                <mat-progress-bar mode="determinate" value="{{skill.level}}"></mat-progress-bar>
+            </div>
+        </div>
         <h1>
-            <span>Skills</span>
+            <span ngClass="Skills-red-letter" data-aos="fade-up" data-aos-duration="8000">S</span>
+            <span data-aos="fade-up" data-aos-duration="8000">K</span>
+            <span data-aos="fade-up" data-aos-duration="8000">I</span>
+            <span data-aos="fade-up" data-aos-duration="8000">L</span>
+            <span data-aos="fade-up" data-aos-duration="8000">L</span>
+            <span ngClass="Skills-red-letter" data-aos="fade-up" data-aos-duration="8000">S</span>
         </h1>
+        <div ngClass="Skills-bars-2">
+            <div *ngFor="let skill of skills_2" ngClass="Skills-bar" data-aos="fade-up" data-aos-duration="8000">
+                <label>
+                    {{skill.name}}
+                </label>
+                <mat-progress-bar mode="determinate" value="{{skill.level}}"></mat-progress-bar>
+            </div>
+        </div>
     </div>
 </section>

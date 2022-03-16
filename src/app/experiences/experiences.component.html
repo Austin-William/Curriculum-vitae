@@ -1,9 +1,9 @@
 <section id="experiences">
-    <h1 ngClass="Experiences-title">
+    <h1 ngClass="Experiences-title" data-aos="fade-left" data-aos-duration="2000">
         <span>E</span>xperiences
     </h1>
     <div ngClass="Experiences-container">
-        <div *ngFor="let experience of experiences" ngClass="Experiences-items">
+        <div *ngFor="let experience of experiences" ngClass="Experiences-items" data-aos="fade-up" data-aos-duration="4000">
             <div ngClass="Experiences-item-container">
                 <img ngClass="Experiences-item-image" src="{{experience.logo}}" alt="{{experience.company}}">
                 <div ngClass="Experiences-item-infos">
