@@ -10,11 +10,11 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10vh;
 }
 
-
 .Project-title {
-    font-size: 2vw;
+    font-size: 8vw;
     padding: 2vw;
     width: 50%;
     text-align: center;
@@ -27,7 +27,7 @@ section {
     width: 100%;
     height: 1px;
     background-color: aliceblue;
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
 }
 
 .Project-title::after {
@@ -36,7 +36,7 @@ section {
     width: 100%;
     height: 1px;
     background-color: aliceblue;
-    margin-top: 2vw;
+    margin-top: 5vw;
 }
 
 
@@ -47,7 +47,7 @@ section {
 }
 
 .Project-title .Project-title-first-letter {
-    font-size: 4vw;
+    font-size: 10vw;
     font-weight: bold;
     color: crimson;
 }
@@ -58,6 +58,7 @@ section {
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     row-gap: 10px;
+    margin-top: 20vh;
 }
 
 .Project-description {
@@ -69,6 +70,10 @@ section {
     color: aliceblue;
     line-height: 1.5;
     letter-spacing: 0.3vw;
+}
+
+.Project-description p {
+    text-align: center;
 }
 
 .Project-description p::after {
@@ -86,16 +91,33 @@ section {
     color: crimson;
 }
 
+.Project-content {
+    border-radius: 10px;
+    padding: 2vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+}
+
 .Project-carousel {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.Project-carousel h5 {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
 .Project-carousel img {
-    width: 50%;
-    height: auto;
+    width: 45vw;
+    height: 60vh;
+    object-fit:contain;
+    background-size: cover;
+    border-radius: 20px;
 }
 
 .Project-description button {
@@ -106,7 +128,7 @@ section {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,7 +31,8 @@ import { ProjectsComponent } from './projects/projects.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     MatProgressBarModule,
-    MdbCarouselModule
+    MdbCarouselModule,
+    MdbScrollspyModule
   ],
   providers: [],
   bootstrap: [AppComponent],

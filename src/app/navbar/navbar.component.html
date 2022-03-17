@@ -1,10 +1,8 @@
-<nav class="navbar">
-    <div class="navbar-container">
-        <ul id="nav-mobile" class="navbar-list">
+<nav ngClass="navbar">
+    <div ngClass="navbar-container" id="scrollspy">
+        <ul ngClass="navbar-list" mdbScrollspy="scrollspy">
             <li>
-                <a href="#profile">
-                    About me
-                </a>
+                <a href="#profile" mdbScrollspyLink="profile">About me</a>
             </li>
             <li>
                 <a href="#experiences">

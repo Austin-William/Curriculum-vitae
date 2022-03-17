@@ -1,4 +1,4 @@
-<section id="activities">
+<section id="activities" mdbScrollspyElement="scrollspy">
     <div ngClass="Activities-container">
         <div ngClass="Activities-title">
             <h1 data-aos="fade-up" data-aos-duration="4000">
@@ -8,7 +8,7 @@
         </div>
         <div ngClass="Activities-list">
             <div ngClass="Activities-tiles" *ngFor="let activitie of activities">
-                <div ngClass="Activities-item"
+                <div ngClass="Activities-item" data-aos="fade-up" data-aos-duration="1000"
                     [ngStyle]="{'background-image': 'url(' + activitie.image + ')', 'background-position': 'center', 'background-color': 'black'}">
                     <h3>
                         {{activitie.name}}

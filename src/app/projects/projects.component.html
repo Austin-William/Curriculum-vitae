@@ -1,9 +1,9 @@
-<section id="project">
+<section id="project" mdbScrollspyElement="scrollspy">
     <div ngClass="Project-container">
-        <div ngClass="Project-title">
+        <div ngClass="Project-title" data-aos="fade-up" data-aos-duration="5000">
             <span><span ngClass="Project-title-first-letter">P</span>rojects</span>
         </div>
-        <div *ngFor="let project of projects" ngClass="Project-tile">
+        <div *ngFor="let project of projects" ngClass="Project-tile" data-aos="fade-up" data-aos-duration="5000">
             <div ngClass="Project-description">
                 <h2>
                     {{project.name}}
@@ -22,7 +22,7 @@
             <div ngClass="Project-content">
                 <mdb-carousel [dark]="false" [controls]="true" [indicators]="false" [animation]="'fade'">
                     <mdb-carousel-item *ngFor="let image of project.images" ngClass="Project-carousel">
-                        <img src="{{image.url}}" alt="{{image.alt}}" class="d-block" />
+                        <img src="{{image.url}}" alt="{{image.alt}}" />
                         <div class="carousel-caption">
                             <h5>{{image.title}}</h5>
                         </div>
