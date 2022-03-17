@@ -1,0 +1,28 @@
+<section id="experiences" mdbScrollspyElement="scrollspy">
+    <h1 ngClass="Experiences-title" data-aos="fade-left" data-aos-duration="2000">
+        <span>E</span>xperiences
+    </h1>
+    <div ngClass="Experiences-container">
+        <div *ngFor="let experience of experiences" ngClass="Experiences-items" data-aos="fade-up" data-aos-duration="4000">
+            <div ngClass="Experiences-item-container">
+                <img ngClass="Experiences-item-image" src="{{experience.logo}}" alt="{{experience.company}}">
+                <div ngClass="Experiences-item-infos">
+                    <h2 ngClass="Experiences-item-title">
+                        {{experience.company}} - {{experience.title}}
+                    </h2>
+                    <p ngClass="Experiences-item-description">
+                        {{experience.description}}
+                    </p>
+                    <div ngClass="Experiences-item-tech">
+                        <div *ngFor="let tech of experience.technologies">
+                            <img src="{{tech.image}}" alt="{{tech.name}}">
+                        </div>
+                    </div>
+                    <div ngClass="Experiences-item-date">
+                        <i>{{experience.date}}</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

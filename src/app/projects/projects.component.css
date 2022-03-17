@@ -1,0 +1,146 @@
+section {
+    min-height: 100vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 10vh;
+}
+
+.Project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.Project-title {
+    font-size: 8vw;
+    padding: 2vw;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.Project-title::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: aliceblue;
+    margin-bottom: 5vw;
+}
+
+.Project-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: aliceblue;
+    margin-top: 5vw;
+}
+
+
+.Project-title span {
+    margin-bottom: 8vh;
+    color: aliceblue;
+    letter-spacing: 0.3vw;
+}
+
+.Project-title .Project-title-first-letter {
+    font-size: 10vw;
+    font-weight: bold;
+    color: crimson;
+}
+
+.Project-tile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 10px;
+    margin-top: 20vh;
+}
+
+.Project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    color: aliceblue;
+    line-height: 1.5;
+    letter-spacing: 0.3vw;
+}
+
+.Project-description p {
+    text-align: center;
+}
+
+.Project-description p::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color:aliceblue;
+    margin-top: 20px;
+}
+
+.Project-description h2 {
+    font-size: 2vw;
+    font-weight: bold;
+    color: crimson;
+}
+
+.Project-content {
+    border-radius: 10px;
+    padding: 2vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+}
+
+.Project-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Project-carousel h5 {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.Project-carousel img {
+    width: 45vw;
+    height: 60vh;
+    object-fit:contain;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.Project-description button {
+    background-color: aliceblue;
+    border: none;
+    color: crimson;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1vw;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s;
+}
+
+.Project-description button:hover {
+    background-color: crimson;
+    color: aliceblue;
+}
+
+.Project-description a {
+    margin-top: 2vh;
+}

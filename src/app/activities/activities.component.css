@@ -1,0 +1,79 @@
+section {
+    min-height: 100vh;
+    padding: 2vh;
+}
+
+.Activities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.Activities-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Activities-container h1 {
+    font-size: 10vh;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+}
+
+.Activities-container h1 .Activities-title-down-part {
+    font-weight: normal;
+    color: aliceblue;
+    padding: 1vh;
+    color: crimson;
+    text-decoration: underline;
+    font-size: 7vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Activities-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 5vh;
+}
+
+.Activities-tiles {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 5vh;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.Activities-tiles:hover {
+    transform: scale(1.1);
+}
+
+.Activities-item {
+    margin: 2.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.527);
+    background-color: aliceblue;
+}
+
+.Activities-item h3 {
+    background-color: rgba(0, 0, 0, 0.527);
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(220, 20, 60, 0.5);
+}

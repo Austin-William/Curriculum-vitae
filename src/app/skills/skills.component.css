@@ -1,0 +1,75 @@
+section {
+    min-height: 100vh;
+    padding: 10vh;
+}
+
+.Skills-container {
+    display: flex;
+    flex-direction: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    height: 100%;
+    margin-top: 20vh;
+}
+
+.Skills-container h1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: aliceblue;
+}
+
+.Skills-container h1 span {
+    font-size: 6vh;
+    margin-bottom: 5.5vh;
+    font-weight: 200;
+}
+
+.Skills-red-letter {
+    color: crimson;
+    font-weight: bold;
+}
+
+.Skills-bars-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Skills-bars-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Skills-bar {
+    margin-bottom: 6vh;
+    color: aliceblue;
+}
+
+.Skills-bar label {
+    font-size: 2vh;
+    font-weight: 200;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+    background: linear-gradient(to right, grey, crimson);
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background: #E4E8EB;
+    border-radius: 2px;
+}
+
+::ng-deep .mat-progress-bar {
+    border-radius: 2px;
+}
