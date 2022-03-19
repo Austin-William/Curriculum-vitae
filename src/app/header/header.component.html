@@ -1,4 +1,4 @@
-<header>
+<header id="contact">
     <div ngClass="Header-container">
         <div ngClass="Header-text">
             <div ngClass="Header-title">
@@ -11,9 +11,16 @@
                 <h2 data-aos="fade-right" data-aos-duration="1000">
                     A 4th year student at Epitech Paris.
                 </h2>
-                <button ngClass="Header-button" onclick="window.location.href='#profile'">
-                    Let's start
-                </button>
+                <div ngClass="Header-buttons">
+                    <button ngClass="Header-button" onclick="window.location.href='#profile'">
+                        Let's start
+                    </button>
+                    <a href="mailto:austin-william.lo@epitech.eu">
+                        <button ngClass="Header-button">
+                            Contact me !
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
         <img src="assets/images/picture.png" alt="logo">
