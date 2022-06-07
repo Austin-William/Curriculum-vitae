@@ -5,6 +5,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +18,11 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { FooterComponent } from './footer/footer.component';
+
+export function httpTranslateLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -24,7 +33,8 @@ import { ProjectsComponent } from './projects/projects.component';
     ExperiencesComponent,
     SkillsComponent,
     ActivitiesComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +42,15 @@ import { ProjectsComponent } from './projects/projects.component';
     AppRoutingModule,
     MatProgressBarModule,
     MdbCarouselModule,
-    MdbScrollspyModule
+    MdbScrollspyModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],
