@@ -25,10 +25,6 @@ export class SkillsComponent implements OnInit {
       level: '60'
     },
     {
-      name: 'Docker',
-      level: '40'
-    },
-    {
       name: 'Python',
       level: '40'
     },
@@ -40,7 +36,10 @@ export class SkillsComponent implements OnInit {
       name: 'Haskell',
       level: '20'
     },
-    
+    {
+      name: 'C#',
+      level: '40'
+    }
   ];
 
   skills_2 = [
@@ -49,15 +48,15 @@ export class SkillsComponent implements OnInit {
       level: '70'
     },
     {
-      name: 'HTML',
+      name: 'HTML 5',
       level: '70'
     },
     {
-      name: 'CSS',
+      name: 'CSS 3',
       level: '80'
     },
     {
-      name: 'Flutter',
+      name: 'Flutter (Dart)',
       level: '70'
     },
     {

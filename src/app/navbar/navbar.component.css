@@ -1,12 +1,14 @@
-nav{
+nav {
     position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 8px;
     opacity: 0.5;
-    transition: all 0.5s;
     z-index: 9999;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 0.5s;
 }
 
 nav:hover {
@@ -39,5 +41,14 @@ li a {
 
 li a:hover {
     font-size: 15px;
-    color: #ffc107;
+    color: crimson;
+}
+
+.navbar-select {
+    border-color: transparent;
+    transition: all 0.3;
+}
+
+.navbar-select:hover {
+    cursor: pointer;
 }
